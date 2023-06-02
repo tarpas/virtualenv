@@ -40,6 +40,7 @@ dependencies = [
   "filelock<4,>=3.4.1",
   'importlib-metadata>=4.8.3; python_version < "3.8"',
   "platformdirs<3,>=2.4",
+  "pytest-testmon@git+https://github.com/tarpas/pytest-testmon#egg=main"
 ]
 optional-dependencies.docs = [
   "proselint>=0.13",
@@ -147,3 +148,6 @@ markers = ["slow"]
 timeout = 600
 addopts = "--tb=auto -ra --showlocals --no-success-flaky-report"
 env = ["PYTHONIOENCODING=utf-8"]
+tmnet_api_key = "virtualenv_Puh0iZYgE22xQPgMOft5hTO3eR8AG7cwZb2DedvykbBqevWC9QivZUot1JkTFWom"
+testmon_ignore_dependencies = ["virtualenv",]
+#testmon_dev_url = "http://localhost:8080"
