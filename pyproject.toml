@@ -102,6 +102,7 @@ pip = "virtualenv.seed.embed.pip_invoke:PipInvoke"
 build.hooks.vcs.version-file = "src/virtualenv/version.py"
 build.targets.sdist.include = ["/src", "/tests"]
 version.source = "vcs"
+metadata.allow-direct-references = true
 
 [tool.coverage]
 html.show_contexts = true
